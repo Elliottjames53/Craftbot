@@ -453,7 +453,7 @@ function addBotMessage(answer, tutorials) {
   row.innerHTML = `
     <div class="bot-avatar">⛏️</div>
     <div class="bot-content">
-      <div class="bubble bot">${esc(answer)}</div>
+      <div class="bubble bot">${answer.replace(/\n/g, '<br>')}</div>
       ${cardsHtml}
     </div>`;
 
